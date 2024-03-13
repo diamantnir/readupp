@@ -1,0 +1,131 @@
+@import "../global/styles.scss";
+
+.register_container {
+  background: $color3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .inner_register_container {
+    min-width: 644px;
+    max-width: 644px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8rem 1.4rem 2rem 1.4rem;
+    background: #ffffff;
+    box-shadow: 0px 2px 52px #d3d3d3;
+    border-radius: 10px;
+
+    .form_container {
+      select,
+      input {
+        background: #ffffff;
+        border: 1px solid #cdcfd6;
+        border-radius: 10px;
+        padding: 0.9rem 1.8rem;
+        color: #626262;
+
+        &:focus {
+          outline-width: 1px;
+          outline-style: solid;
+          outline-color: $color1;
+        }
+      }
+
+      select {
+        padding: 0.95rem 1.8rem 0.9rem 1.8rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      select:focus {
+        color: $color1;
+        font-weight: 500;
+      }
+
+      .selectdiv {
+        position: relative;
+      }
+
+      .selectdiv::after {
+        content: url("../../icons/downArrow.svg");
+        font: 17px "Consolas", monospace;
+        color: #333;
+        right: 20px;
+        top: 18px;
+        padding: 0 0 2px;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .selectdiv.rtl::after {
+        left: 20px;
+        right: auto;
+      }
+
+      .organisation_container {
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ffffff;
+          border: 1px solid #cdcfd6;
+          border-radius: 10px;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          height: 50px;
+          cursor: pointer;
+          color: #979797;
+
+          input[type="radio"] {
+            opacity: 0;
+            width: 0px;
+            height: 0px;
+          }
+
+          &.focus {
+            border: 2px solid #0f4152;
+            color: $color1;
+            font-weight: 500;
+          }
+
+          &:focus-within {
+            border: 2px solid #0f4152;
+            color: $color1;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .special_message {
+        background: rgba(213, 228, 234, 0.677584);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+// MEDIA
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .register_container .inner_register_container {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+  .register_container
+    .inner_register_container
+    .form_container
+    .selectdiv::after {
+    top: 12px;
+  }
+  .register_container .inner_register_container .form_container input {
+    padding: 0.95rem 1.8rem 0.8rem 1.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+}

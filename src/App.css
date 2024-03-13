@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.red
+{
+  color:red;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +41,83 @@
     transform: rotate(360deg);
   }
 }
+
+
+    /* css for mobile menu here / */
+    .mobileMenu {
+      position: fixed;
+      top: 0px;
+      right: -100%;
+      transition: 0.5s;
+      width: 100%;
+      z-index: 999999999 !important;
+      bottom: 0px;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .mobileMenu .inner {
+      max-width: 325px;
+      width: 100%;
+      background: #104153;
+      height: 100%;
+      padding: 24px 25px;
+    }
+    .mobileMenu .inner .menuCross {
+      cursor: pointer;
+    }
+    .mobileMenu .inner ul {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .mobileMenu .inner ul li {
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+    .show {
+      display: block;
+    }
+    .mobileMenu .inner ul li a {
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 46px;
+      /* or 230% */
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .mobileMenu .inner ul ul {
+      display: block;
+    }
+    
+    .mobileMenu .inner ul ul li {
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 46px;
+      /* or 230% */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #ffffff;
+      direction: rtl;
+    }
+    .mobileMenu .inner ul ul li img {
+      width: 20px;
+    }
+    .mobileMenu .inner ul ul .drowDown {
+      padding-left: 30px;
+      display: none;
+      transition: 0.4s;
+    }
+    .mobileMenu .inner ul ul .drowDown li {
+      justify-content: flex-end;
+    }
+    .mobileMenu .inner ul ul .show {
+      display: block;
+    }

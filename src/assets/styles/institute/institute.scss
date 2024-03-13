@@ -1,0 +1,294 @@
+@import "../global/styles.scss";
+
+.search_container {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.201513);
+  border-radius: 10px;
+  margin-top: 3rem;
+  padding: 1.6rem 2.5rem;
+
+  .logo2 {
+    position: absolute;
+    top: 3.4rem;
+    right: 2rem;
+  }
+
+  .logo2.rtl {
+    left: 2rem;
+    right: auto;
+  }
+
+  .user_card {
+    margin-top: 2rem;
+
+    li {
+      div {
+        background: rgba(0, 0, 0, 0.0001);
+        border: 1px solid #cdcfd6;
+        border-radius: 8px;
+        text-align: center;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      select {
+        background: #ffffff;
+        border: 1px solid #cdcfd6;
+        border-radius: 10px;
+        height: 45px;
+      }
+
+      .selectdiv {
+        position: relative;
+        width: 100%;
+      }
+
+      select::-ms-expand {
+        display: none;
+      }
+
+      .selectdiv:after {
+        content: "<>";
+        font: 15px "Consolas", monospace;
+        color: $color1;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 8px;
+        top: 14px;
+        position: absolute;
+        pointer-events: none;
+        font-weight: 600;
+      }
+
+      .selectdiv.rtl:after {
+        left: 15px;
+        right: auto;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+
+      .selectdiv select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.75;
+        background-color: #ffffff;
+        background-image: none;
+        -ms-word-break: normal;
+        word-break: normal;
+      }
+
+      p {
+        color: #2d2d2d;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        color: #44c6cb;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .last {
+    border-left: 2px dotted #000;
+  }
+
+  .last.rtl {
+    border-right: 2px dotted #000;
+    border-left: none;
+  }
+
+  .register_link {
+    border: 1px solid #cdcfd6;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .message_cont {
+    max-width: 300px;
+    border: 1px solid #979797;
+    border-radius: 50px;
+    padding: 0.8rem 1rem 0.8rem 2rem;
+  }
+
+  .back {
+    position: absolute;
+    top: 0%;
+    left: -5.5rem;
+    width: 80px;
+  }
+}
+
+.subscription_container {
+  height: calc(100vh - 680px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color1;
+    border-radius: 10px;
+  }
+
+  .cal_details {
+    max-width: 900px;
+
+    .inner_cal_details {
+      background-color: #eceef4;
+      position: relative;
+
+      .drop_down {
+        position: absolute;
+        top: 50%;
+        left: -5rem;
+        transform: translateY(-50%);
+      }
+    }
+
+    .line_ver {
+      border: 1px dashed #00000049;
+    }
+
+    .form_sec {
+      input {
+        height: 55px;
+        padding: 0rem 1.2rem;
+        background: #ffffff;
+        border: 1px solid #cdcfd6;
+        border-radius: 10px;
+        color: #626262;
+      }
+
+      select {
+        height: 55px;
+        padding: 0rem 1.2rem;
+        background: #ffffff;
+        border: 1px solid #cdcfd6;
+        border-radius: 10px;
+        color: #626262;
+      }
+
+      .selectdiv {
+        position: relative;
+        width: 100%;
+      }
+
+      select::-ms-expand {
+        display: none;
+      }
+
+      .selectdiv:after {
+        content: ">";
+        font: 22px "Consolas", monospace;
+        color: $color1;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 15px;
+        top: 15px;
+        position: absolute;
+        pointer-events: none;
+        font-weight: 600;
+      }
+
+      .selectdiv.rtl:after {
+        left: 15px;
+        right: auto;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+
+      .selectdiv select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.75;
+        background-color: #ffffff;
+        background-image: none;
+        -ms-word-break: normal;
+        word-break: normal;
+      }
+    }
+
+    .date_cal {
+      .abs_icon {
+        position: absolute;
+        right: 15px;
+        top: 45%;
+
+        img {
+          max-width: 22px;
+        }
+      }
+
+      input[type="date"]::-webkit-inner-spin-button,
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+  .save_btn {
+    margin-top: -2rem;
+  }
+}
+
+// MEDIA
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .search_container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .searched_list_container {
+    margin-top: 1rem;
+  }
+  .searched_list_container .header {
+    padding: 1.2rem 1rem 0rem 1rem;
+  }
+  .searched_list_container .tabs_container,
+  .searched_list_container .searched_list_body_cont {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .searched_list_container .tabs {
+    min-width: 600px;
+  }
+  .searched_list_container .searched_list_body {
+    min-width: 1000px;
+    height: calc(100vh - 530px);
+    overflow-y: auto;
+  }
+  .subscription_container {
+    height: 100%;
+  }
+  .subscription_container .save_btn {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+}

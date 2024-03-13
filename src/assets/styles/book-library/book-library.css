@@ -1,0 +1,2896 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+html {
+  width: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: auto !important;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 92%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 88%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 84%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 76%;
+  }
+}
+
+body {
+  background-color: #f0ecf4 !important;
+}
+
+.assistant {
+  font-family: "Assistant", sans-serif;
+}
+
+.heebo {
+  font-family: "Heebo", sans-serif;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.f8 {
+  font-size: 0.5rem;
+}
+
+.f10 {
+  font-size: 0.625rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.f22 {
+  font-size: 1.375rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f28 {
+  font-size: 1.75rem;
+}
+
+.f34 {
+  font-size: 2.125rem;
+}
+
+.f30 {
+  font-size: 1.875rem;
+}
+
+.f35 {
+  font-size: 2.125rem;
+  line-height: 57px;
+}
+
+.f50 {
+  font-size: 3.125rem;
+  line-height: 65px;
+}
+
+.f64 {
+  font-size: 4rem;
+  line-height: 71px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.color1 {
+  color: #0f4152 !important;
+}
+
+.bg_color1 {
+  background: #0f4152 !important;
+}
+
+.color2 {
+  color: #606060 !important;
+}
+
+.bg_color2 {
+  background: #606060 !important;
+}
+
+.color3 {
+  color: #f0ecf4 !important;
+}
+
+.bg_color3 {
+  background: #f0ecf4 !important;
+}
+
+.color4 {
+  color: #bababa !important;
+}
+
+.bg_color4 {
+  background: #bababa !important;
+}
+
+.color5 {
+  color: #2d2d2d !important;
+}
+
+.bg_color5 {
+  background: #2d2d2d !important;
+}
+
+.color6 {
+  color: #3d3f45 !important;
+}
+
+.bg_color6 {
+  background: #3d3f45 !important;
+}
+
+.color7 {
+  color: #f2f5fe !important;
+}
+
+.bg_color7 {
+  background: #f2f5fe !important;
+}
+
+.color8 {
+  color: #cdcfd6 !important;
+}
+
+.bg_color8 {
+  background: #cdcfd6 !important;
+}
+
+.color9 {
+  color: #eceef4 !important;
+}
+
+.bg_color9 {
+  background: #eceef4 !important;
+}
+
+.color10 {
+  color: #44c6cb !important;
+}
+
+.bg_color10 {
+  background: #44c6cb !important;
+}
+
+.color11 {
+  color: #626262 !important;
+}
+
+.bg_color11 {
+  background: #626262 !important;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+button:not([disabled]) {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+button:not([disabled]):focus {
+  outline: none;
+}
+
+button:not([disabled]):hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.page_container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+details.custom-select {
+  position: relative;
+  width: 120px;
+  /* FAKE SELECT */
+}
+
+details.custom-select summary {
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #0f4152;
+  list-style: none;
+  color: #0f4152;
+}
+
+details.custom-select summary::-webkit-details-marker {
+  display: none;
+}
+
+details.custom-select summary:after {
+  content: url("../../icons/downArrow.svg");
+  display: inline-block;
+  float: right;
+}
+
+details.custom-select summary.rtl:after {
+  content: url("../../icons/downArrow.svg");
+  display: inline-block;
+  float: left;
+}
+
+details.custom-select summary:focus {
+  outline: none;
+}
+
+details.custom-select ul {
+  list-style: none;
+  width: 100%;
+  background: #0f4152;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  padding: 1rem;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+details.custom-select li {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #0f4152;
+}
+
+details.custom-select li:first-child {
+  padding-top: 0;
+}
+
+details.custom-select li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+details.custom-select summary.radios {
+  counter-reset: radios;
+}
+
+details.custom-select input[type="radio"] {
+  counter-increment: radios;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+}
+
+details.custom-select input[type="radio"]:checked {
+  display: inline;
+}
+
+details.custom-select input[type="radio"]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1rem;
+  color: #0f4152;
+  margin-right: 0.5rem;
+}
+
+details.custom-select summary.rtl input[type="radio"]:after {
+  margin-right: 0rem;
+}
+
+details.custom-select ul.list {
+  counter-reset: labels;
+}
+
+details.custom-select label {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+details.custom-select[open] summary:before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+details.custom-select[open] {
+  z-index: 1;
+}
+
+details.custom-select.light {
+  position: relative;
+  width: 120px;
+  /* FAKE SELECT */
+}
+
+details.custom-select.light summary {
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #f0ecf4;
+  list-style: none;
+  color: #f0ecf4;
+}
+
+details.custom-select.light summary::-webkit-details-marker {
+  display: none;
+}
+
+details.custom-select.light summary:after {
+  content: url("../../icons/downArrow-light.svg");
+  display: inline-block;
+  float: right;
+}
+
+details.custom-select.light summary.rtl:after {
+  content: url("../../icons/downArrow-light.svg");
+  display: inline-block;
+  float: left;
+}
+
+details.custom-select.light summary:focus {
+  outline: none;
+}
+
+details.custom-select.light ul {
+  list-style: none;
+  width: 100%;
+  background: #0f4152;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  padding: 1rem;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+details.custom-select.light li {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #0f4152;
+}
+
+details.custom-select.light li:first-child {
+  padding-top: 0;
+}
+
+details.custom-select.light li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+details.custom-select.light summary.radios {
+  counter-reset: radios;
+}
+
+details.custom-select.light input[type="radio"] {
+  counter-increment: radios;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+}
+
+details.custom-select.light input[type="radio"]:checked {
+  display: inline;
+}
+
+details.custom-select.light input[type="radio"]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1rem;
+  color: #f0ecf4;
+  margin-right: 0.5rem;
+}
+
+details.custom-select.light summary.rtl input[type="radio"]:after {
+  margin-right: 0rem;
+}
+
+details.custom-select.light ul.list {
+  counter-reset: labels;
+}
+
+details.custom-select.light label {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+details.custom-select.light[open] summary:before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+details.custom-select.light[open] {
+  z-index: 1;
+}
+
+.header_container {
+  background: #0f4152;
+  height: 66px;
+  position: relative;
+}
+
+.header_container .profile,
+.header_container .access {
+  position: absolute;
+}
+
+.header_container .profile {
+  left: 15px;
+}
+
+.header_container .access {
+  right: 15px;
+}
+
+.header_container .inner_header_container {
+  position: relative;
+}
+
+.header_container .inner_header_container .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.justify-content-between
+{
+  text-align: left;
+}
+.align-self-center
+{
+  text-align :left;
+}
+
+.sidebar_container {
+  background: #0f4152;
+  height: 66px;
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top:-100%
+}
+
+.search_container {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.201513);
+          box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.201513);
+  border-radius: 10px;
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
+}
+
+.search_container .book_library {
+  border: none;
+  border-bottom: 2px solid #0f4152;
+  color: rgba(15, 65, 82, 0.8);
+  min-width: 220px;
+}
+
+.search_container .search_fields select {
+  background: #ffffff;
+  border: 1px solid #b6b6b6;
+  border-radius: 100px;
+  padding-left: 1.5rem;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 14px;
+  height: 44px;
+}
+
+.search_container .search_fields select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search_container .search_fields select:focus {
+  color: #0f4152;
+  font-weight: 500;
+}
+
+.search_container .search_fields select.rtl {
+  padding-right: 1.5rem;
+}
+
+.search_container .search_fields .selectdiv {
+  width: 100%;
+  position: relative;
+}
+
+.search_container .search_fields .selectdiv::after {
+  content: url("../../icons/downArrow.svg");
+  font: 17px "Consolas", monospace;
+  color: #333;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.search_container .search_fields .selectdiv.rtl::after {
+  left: 20px;
+  right: auto;
+}
+
+.search_container .search_fields .inp_container {
+  position: relative;
+  width: 100%;
+}
+
+.search_container .search_fields .inp_container input {
+  background: #ffffff;
+  border: 1px solid #b6b6b6;
+  border-radius: 100px;
+  padding-left: 1.5rem;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 44px;
+}
+
+.search_container .search_fields .inp_container input:focus {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #0f4152;
+}
+
+.search_container .search_fields .inp_container input.rtl {
+  padding-right: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+.search_container .search_fields .inp_container img {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.search_container .search_fields .inp_container img.rtl {
+  left: 20px;
+  right: auto;
+}
+
+.search_container .search_fields .search_btn {
+  background: #0f4152;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  color: #fff;
+  width: 100%;
+  height: 44px;
+}
+
+.searched_list_container {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 52px #d3d3d3;
+          box-shadow: 0px 2px 52px #d3d3d3;
+  border-radius: 10px;
+  margin-top: 2rem;
+ 
+
+}
+
+.searched_list_container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.searched_list_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.searched_list_container::-webkit-scrollbar-thumb {
+  background: #0f4152;
+  border-radius: 10px;
+}
+
+.searched_list_container .searched_card {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.searched_list_container .searched_card:hover {
+  background: #f2f5fe;
+}
+
+@media screen and (max-width: 768px) {
+  .search_container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .searched_list_container {
+    margin-top: 1rem;
+  
+  }
+  .search_container .search_fields select,
+  .search_container .search_fields .inp_container input {
+    height: 30px;
+  }
+  .search_container .search_fields .search_btn {
+    height: 35px;
+  }
+}
+/*# sourceMappingURL=book-library.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #ebecf1;
+  font-family: "Heebo", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f4152;
+  height: 66px;
+  padding: 0px 5%;
+}
+
+.header .left,
+.header .right {
+  width: 40%;
+}
+.header .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .iconMenu {
+  width: 40%;
+  display: none;
+}
+.header .iconMenu .menuICon {
+  display: none;
+}
+.header .left {
+  display: flex;
+  align-items: center;
+}
+.header .left img {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.header .left a {
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  color: #44c6cb;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.header .left .dropDown,
+.mainContent .searchForTop .filter .dropDown {
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  height: 33px;
+  width: 120px;
+  background: transparent;
+  padding: 0px 10px;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.mainContent .searchForTop .filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainContent .searchForTop .filter .dropDown {
+  background: #ffffff;
+  border: 1px solid #b6b6b6;
+  border-radius: 100px;
+  margin-right: 21px;
+  width: 162px;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0)) !important;
+  height: 42.41px;
+}
+
+.header .left .dropDown select,
+.mainContent .searchForTop .filter .dropDown select {
+  width: 100%;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  color: #ffffff;
+  outline: none;
+}
+.header .left select::-ms-expand,
+.mainContent .searchForTop .filter .dropDown select::-ms-expand {
+  right: 20px;
+}
+.mainContent .searchForTop .filter .dropDown select {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+
+  color: #0f4152 !important;
+}
+/* right side header ===== */
+.header .right .menu {
+  display: flex;
+  align-items: center;
+}
+.header .right .menu .addTxt,
+.header .right .menu .library {
+  position: relative;
+  margin-right: 20px;
+}
+.header .right .menu .addTxt p,
+.header .right .menu .library p {
+  font-family: inherit;
+  font-style: normal;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: right;
+  color: #44c6cb;
+}
+.header .right .menu .addTxt .addTxtDropDown,
+.header .right .menu .library .addTxtDropDown {
+  position: absolute;
+  right: 0px;
+  top: 130%;
+  z-index: 999999;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.201513);
+  border-radius: 10px;
+  width: 186px;
+  height: 102px;
+}
+.header .right .menu .addTxt .addtxtActive,
+.header .right .menu .library  .libraryActive{
+  display: block;
+}
+.header .right .menu .addTxt .addTxtDropDown .inner,
+.header .right .menu .library .addTxtDropDown .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header .right .menu .addTxt .addTxtDropDown .inner span,
+.header .right .menu .library .addTxtDropDown .inner span {
+  width: 100%;
+  /* padding: 7px 0px; */
+  display: flex;
+  height: 51px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  color: #0f4152;
+}
+.header .right .menu .addTxt .addTxtDropDown .sqaure,
+.header .right .menu .library .addTxtDropDown .sqaure {
+  position: relative;
+}
+.header .right .menu .addTxt .addTxtDropDown .sqaure img,
+.header .right .menu .library .addTxtDropDown .sqaure img {
+  position: absolute;
+  right: 20px;
+  top: -10%;
+}
+.header .right .menu .addTxt .addTxtDropDown .inner span:nth-child(1),
+.header .right .menu .library .addTxtDropDown .inner span:nth-child(1) {
+  border-radius: 10px 10px 0px 0px !important;
+}
+.header .right .menu .addTxt .addTxtDropDown .inner span:nth-child(2),
+.header .right .menu .library .addTxtDropDown .inner span:nth-child(2) {
+  border-radius: 0px 0px 10px 10px !important;
+}
+.header .right .menu .addTxt .addTxtDropDown .inner span:hover,
+.header .right .menu .library .addTxtDropDown .inner span:hover {
+  background: #eaebf1;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 33px;
+  font-family: inherit;
+  text-align: center;
+  color: #0f4152;
+}
+
+.header .right .icons {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header .right .icons img {
+  margin-left: 10px;
+}
+
+/* <!-- main content here ====================== --> */
+.mainContent {
+  max-width: 1150px;
+  width: 90%;
+  margin: 50px auto 100px auto;
+}
+.mainContent .searchForTop {
+  width: 100%;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.201513);
+  border-radius: 10px;
+  padding: 32px 64px;
+  margin-bottom: 26px;
+}
+.mainContent .searchForTop .crayon-books-05 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.mainContent .searchForTop .searchHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.mainContent .searchForTop .searchHeader h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 41px;
+  color: #0f4152;
+  font-family: inherit;
+}
+.mainContent .searchForTop .searchHeader select {
+  border: none;
+  border-bottom: 1px solid #0f4152;
+  padding: 8px 0px;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 24px;
+  color: rgba(15, 65, 82, 0.8);
+  box-shadow: none;
+  outline: none;
+}
+.mainContent .searchForTop .filter form {
+  background: #ffffff;
+  border: 1px solid #b6b6b6;
+  border-radius: 100px;
+  width: 200px;
+  position: relative;
+  height: 42.41px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-right: 21px;
+}
+.mainContent .searchForTop .filter form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 35px;
+}
+.mainContent .searchForTop .filter form img {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.mainContent .searchForTop .filter .searchBtn {
+  background: #0f4152;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  width: 200px;
+  height: 44px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+.mainContent .searchForTop .filter .searchBtn img {
+  display: none;
+}
+/* detail section here =========== */
+.mainContent .detail {
+  width: 100%;
+  /* overflow: hidden; */
+  border-radius: 10px;
+  background: #ffffff;
+
+  box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.201513);
+}
+.mainContent .detail .detailTable {
+  display: flex;
+
+  border-bottom: 1px solid #cdcfd6;
+  border-radius: 10px;
+}
+.mainContent .detail .detailTable:hover {
+  background: #f2f5fe;
+}
+.mainContent .detail .detailTable:nth-last-child(1) {
+  border-bottom: none !important;
+}
+.mainContent .detail .detailTable .left {
+  width: 50%;
+  padding: 15px 42px;
+
+  display: flex;
+  align-items: center;
+}
+.mainContent .detail .detailTable .left img {
+  width: 79px;
+  height: 118px;
+  margin-right: 72px;
+}
+.mainContent .detail .detailTable .left .authorname {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainContent .detail .detailTable .left .authorname h2 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 29px;
+  line-height: 32px;
+  color: #3d3f45;
+}
+.mainContent .detail .detailTable .left .authorname span p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 0px;
+  color: #3d3f45;
+}
+/* right section here for detail ========== */
+.mainContent .detail .detailTable .right {
+  width: 50%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContent .detail .detailTable .right .detailContent .headerDetail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mainContent .detail .detailTable .right .detailContent .headerDetail h2 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #3d3f45;
+  margin-right: 20px;
+}
+.mainContent .detail .detailTable .right .detailContent .headerDetail span {
+  background: #eceef4;
+  border: 1px solid #cdcfd6;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContent .detail .detailTable .right .detailContent .para {
+  max-width: 400px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #2d2d2d;
+}
+.mainContent .detail .detailTable .right .detailContent .para a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: inherit;
+  text-decoration-line: underline;
+  color: #0f4152;
+}
+.action {
+  position: relative;
+  cursor: pointer;
+}
+ .action span {
+  background: #eceef4;
+  border: 1px solid #cdcfd6;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  color: #0f4152;
+}
+.action span h6 {
+  display: none;
+}
+ .action .activeCross h6 {
+  display: block;
+}
+ .action .activeCross p {
+  display: none;
+}
+.action .actionDropDown {
+  position: absolute;
+  right: 34px;
+  width: 200px;
+  display: none;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 2px 52px -9px rgba(32, 63, 178, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 100;
+}
+.action .mystyle {
+  display: block;
+}
+
+.action .actionDropDown .edit1,
+.action .actionDropDown .mobileDropDown  {
+  padding: 0px 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #cdcfd6;
+  text-decoration: none;
+}
+ .action .actionDropDown .mobileDropDown{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    font-family: inherit;
+    color: #0f4152;
+    display: none;
+}
+.edit{
+  overflow: hidden;
+}
+ .action .actionDropDown .edit1:nth-last-child(1){
+    display: block!important;
+}
+.action .actionDropDown .edit1:nth-last-child(1) p{
+    display: inline;
+}
+
+  .action
+  .actionDropDown
+  .edit:nth-last-child(1),
+ .action .actionDropDown .mobileDropDown:nth-last-child(1) {
+  border-bottom: none !important;
+}
+.action .actionDropDown .edit1 p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  font-family: inherit;
+  color: #0f4152;
+}
+.action .actionDropDown .edit1:hover,
+ .action .actionDropDown .mobileDropDown:hover {
+  background: #eaebf1;
+}
+ .action .actionDropDown .edit1 img, 
+ .action .actionDropDown .mobileDropDown img{
+  margin-right: 18px;
+}
+
+/* delete modal here ======= */
+
+.delete,
+.editTxtModal,
+.editTxtModal,
+.createTxtGeneratorModal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+  display: none;
+}
+.createTxtGeneratorModal {
+  z-index: 9999999 !important;
+}
+.delete .dle,
+.editTxtModal .edit,
+.editTxtModal .edit,
+.createTxtGeneratorModal .edit {
+  width: 100%;
+  height: 131vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete .inner .contentt {
+  position: relative;
+}
+.delete .inner .contentt .deleteItem {
+  position: absolute;
+  left: 0px;
+  top: -33%;
+  width: 261px;
+}
+.editTxtModal .edit,
+.editTxtModal .edit,
+.createTxtGeneratorModal .edit {
+  padding: 50px 0px;
+  overflow-y: hidden;
+}
+.delete .dle .inner{
+    max-width:514px ;
+    width: 85%;
+}
+.editTxtModal .edit::-webkit-scrollbar-track,
+.editTxtModal .edit::-webkit-scrollbar-track,
+.createTxtGeneratorModal .edit::-webkit-scrollbar-track {
+  background-color: transparent;
+  scrollbar-track-color: transparent;
+}
+.delete .inner .contentt,
+.editTxtModal .edit .inner,
+.editTxtModal .edit .inner,
+.createTxtGeneratorModal .edit .inner {
+  width: 100%;
+  background: #ebecf1;
+  border: 1px solid #9e9e9e;
+  border-radius: 10px 10px 0px 10px;
+  padding: 36px 42px;
+}
+
+.editTxtModal .edit .inner,
+.createTxtGeneratorModal .edit .inner {
+  padding: 0px !important;
+  max-width: 640px !important;
+  width: 100% !important;
+  margin-top: 150px;
+  
+}
+.editTxtModal .edit .inner {
+  /* height: 737px; */
+  margin-top: 177px ;
+}
+.createTxtGeneratorModal .edit .inner {
+  margin-top: 45%;
+}
+.delete .inner .contentt h2 {
+  max-width: 373px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 20px;
+  line-height: 41px;
+  text-align: center;
+  font-family: inherit;
+  color: #0f4152;
+  margin-bottom: 76px;
+}
+
+.delete .inner .contentt .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delete .inner .contentt .btns button {
+  border: 1px solid #0f4152;
+  border-radius: 100px;
+  max-width: 200px;
+  width: 48%;
+  height: 51px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: inherit;
+  color: #0f4152;
+}
+.delete .inner .cancel {
+  margin-left: auto;
+  margin-bottom: 22px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+/* edit text modal here ========== */
+.editTxtModal .edit .inner .headerFile,
+.editTxtModal .edit .inner .headerFile,
+.createTxtGeneratorModal .edit .inner .headerFile {
+  width: 100%;
+  background: #43c2c7;
+  height: 143px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 36px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+}
+.createTxtGeneratorModal .edit .inner .headerFile {
+  padding: 26px 0px !important;
+}
+.editTxtModal .edit .inner .headerFile h2,
+.editTxtModal .edit .inner .headerFile h2,
+.createTxtGeneratorModal .edit .inner .headerFile h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 24px;
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+}
+.editTxtModal .edit .inner .headerFile p,
+.editTxtModal .edit .inner .headerFile p,
+.createTxtGeneratorModal .edit .inner .headerFile p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: inherit;
+  text-align: center;
+  color: #1b7a7d;
+}
+.editTxtModal .edit .inner .headerFile .topIcon,
+.editTxtModal .edit .inner .headerFile .topIcon,
+.createTxtGeneratorModal .edit .inner .headerFile .topIcon {
+  position: absolute;
+  top: -92%;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.editTxtModal .edit .inner .headerFile .cancelForm,
+.editTxtModal .edit .inner .headerFile .cancelForm,
+.createTxtGeneratorModal .edit .inner .headerFile .cancelForm {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+
+
+.editTxtModal .edit .inner .mianContent,
+.editTxtModal .edit .inner .mianContent,
+.createTxtGeneratorModal .edit .inner .mianContent {
+  padding: 21px 40px;
+}
+.editTxtModal .edit .inner .mianContent h3,
+.editTxtModal .edit .inner .mianContent .headertxt h3,
+.createTxtGeneratorModal .edit .inner .mianContent h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #0f4152;
+  margin-bottom: 30px;
+}
+.editTxtModal .edit .inner .mianContent .headertxt h3 {
+  margin-bottom: 0px !important;
+}
+.editTxtModal .edit .inner .mianContent .headertxt {
+  margin-bottom: 30px;
+}
+.editTxtModal .edit .inner .mianContent .headertxt p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #7b7b7b;
+}
+.editTxtModal .edit .inner .mianContent form {
+  width: 100%;
+}
+.editTxtModal .edit .inner .mianContent form .row,
+.createTxtGeneratorModal .edit .inner .mianContent form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.editTxtModal .edit .inner .mianContent form .row .floating-label-group,
+.createTxtGeneratorModal
+  .edit
+  .inner
+  .mianContent
+  form
+  .row
+  .floating-label-group {
+  position: relative;
+  display: flex;
+  width: 32%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.editTxtModal .edit .inner .mianContent form .row .floating-label-group input {
+  border: 1px solid #c0c0c0;
+  background: transparent;
+  border-radius: 10px;
+  height: 45px;
+  width: calc(100% - 0px);
+  padding: 0px 10px;
+  outline: none;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  color: #0f4152;
+}
+.floating-label-group .floating-label {
+  font-size: 13px;
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #6f6f6f;
+  left: 12px;
+  transition: all 0.1s ease;
+}
+.floating-label-group input:focus ~ .floating-label,
+.floating-label-group input:not(:focus):valid ~ .floating-label {
+  top: -11px;
+  bottom: 0px;
+  left: 10px;
+  background: #ebecf1;
+  padding: 0px 5px;
+  width: fit-content;
+  height: 20px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
+}
+/* create text generate css here ================= */
+#selectLang {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+#selectLang p {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0f4152;
+  margin-right: 10px;
+}
+#selectLang select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #949494;
+}
+#mic {
+  position: absolute;
+  top: 21px;
+  right: 6px;
+  cursor: pointer;
+}
+#errorMessage {
+  width: 100%;
+  background: rgba(255, 0, 0, 0.15);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+}
+#errorMessage img {
+  margin-right: 20px;
+}
+#errorMessage p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  color: #ff0000;
+}
+.createTxtGeneratorModal .edit .inner .loadingGenerate {
+  width: 100%;
+  padding: 81px 0px;
+}
+.createTxtGeneratorModal .edit .inner .generatedText {
+  margin: 39px auto 26px auto;
+}
+.createTxtGeneratorModal .edit .inner .loadingGenerate img {
+  height: 212px;
+  max-width: 347px;
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-radius: 0px;
+  margin-bottom: 69px;
+}
+.createTxtGeneratorModal .edit .inner .loadingGenerate h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  font-family: inherit;
+  text-align: center;
+  color: #0f4152;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .book {
+  display: block;
+  margin: auto;
+  height: 203px;
+  width: 136px;
+  margin-bottom: 13px;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .book {
+  display: block;
+  margin: auto;
+  height: 203px;
+  width: 136px;
+  margin-bottom: 13px;
+}
+.createTxtGeneratorModal
+  .edit
+  .inner
+  .generatedText
+  .btns
+  .left
+  button:nth-child(1) {
+  margin-right: 12px;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .btns .left button {
+  border: 1px solid #0f4152;
+  border-radius: 100px;
+  width: 128px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  color: #0f4152;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .btns .left button img {
+  margin-right: 12px;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .btns .confirm {
+  background: #0f4152;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  width: 200px;
+  height: 44px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+  outline: none;
+  /* identical to box height */
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+}
+/* select option section here for form ========== */
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+}
+.input select {
+  border: 1px solid #c0c0c0;
+  background: transparent;
+  border-radius: 10px;
+  height: 45px;
+  width: 100%;
+  padding: 0px 10px;
+  outline: none;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  font-family: inherit;
+  color: #0f4152;
+}
+
+.input__field {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  box-sizing: boder-box;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  transition-delay: 0ms;
+  will-change: color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: inherit;
+  transition: 200ms color linear;
+}
+#input__label {
+  font-size: 13px;
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 24px;
+  font-family: inherit;
+  color: #6f6f6f;
+  left: 12px;
+  transition: all 0.1s ease;
+  display: inline-block !important;
+}
+.input__field:invalid {
+  color: transparent;
+  transition: 200ms color linear 100ms;
+  color: #6f6f6f;
+}
+.input__field:valid + .input__label,
+.input__field:focus:valid + .input__label {
+  top: -11px;
+  bottom: 0px;
+  width: fit-content;
+  left: 10px;
+  display: inline-block !important;
+  background: #ebecf1;
+  padding: 0px 5px;
+  height: 20px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
+}
+#messageLabel {
+  top: -11px;
+  bottom: 0px;
+  width: fit-content;
+  left: 10px;
+  display: inline-block !important;
+  background: #ebecf1;
+  padding: 0px 5px;
+  height: 20px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
+}
+.input__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  right: 0;
+  top: 12px;
+  left: 7px;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: 200ms transform ease-out 200ms;
+  will-change: transform;
+}
+#fileRow {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 66px;
+}
+.input textarea {
+  position: relative;
+  display: block;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  width: 93%;
+  height: 113px;
+  outline: none;
+  resize: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 22px 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  font-family: inherit;
+  color: #0f4152;
+}
+.input textarea::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #949494;
+}
+.input:active::after {
+  transform: rotate(-180deg);
+}
+#img {
+  width: 40%;
+  display: flex;
+}
+#img .file-input {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  border-radius: 50%;
+  background: #0f4152;
+  margin-right: 10px;
+}
+
+#img input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#img p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  color: #0f4152;
+  margin-top: 13px
+}
+#line {
+  width: 100%;
+  border: 1px solid #cdcfd6;
+}
+#nextBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 0px 10px 0px;
+}
+#nextBtn button {
+  background: #0f4152;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  border: none;
+  width: 200px;
+  height: 44px;
+  outline: none;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 21px;
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* chapter details here ======== */
+.editTxtModal .edit .inner .mianContent .chapterMainContent{
+    position: relative;
+}
+.editTxtModal .edit .inner .mianContent .chapterMainContent .row1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.editTxtModal .edit .inner .mianContent .chapterMainContent .row1 p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  margin-right: 10px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  color: #7b7b7b;
+}
+
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  input {
+  background: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  width: 203px;
+  height: 45px;
+  outline: none;
+  box-shadow: none;
+  padding: 0px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  margin-right: 11px;
+  color: #0f4152;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .fileNameCenter {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 182px;
+  height: 21px;
+  padding: 0px 5px;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .fileNameCenter
+  img {
+  margin-right: 7px;
+  cursor: pointer;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .fileNameCenter
+  p {
+  white-space: nowrap;
+  width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .file-input {
+  position: relative;
+  /* display: inline-block; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 133px;
+  height: 44px;
+  border: 1px solid #0f4152;
+  border-radius: 100px;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .file-input
+  img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .file-input
+  p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  color: #0f4152;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .btnsChapter {
+  position: absolute;
+  bottom: 20px;
+  /* width: 100%; */
+  right: 43px;
+  left: 43px;
+  padding-top: 28px;
+  border-top: 1px solid #cdcfd6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .btnsChapter
+  .back {
+  border: 1px solid #0f4152;
+  border-radius: 100px;
+  width: 200px;
+  height: 44px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #0f4152;
+  cursor: pointer;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .btnsChapter
+  .update {
+  background: #0f4152;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  width: 200px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* box-shadow: none; */
+}
+/* footer section here ===== */
+#footer {
+  background: #0f4152;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  padding: 17px 0px;
+}
+
+#footer a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: inherit;
+  text-decoration: none;
+  margin: 0px 10px;
+  line-height: 33px;
+  text-align: center;
+  color: #44c6cb;
+}
+
+/* media queries here ====================== */
+@media only screen and (max-width: 1200px) {
+  .mainContent .searchForTop .crayon-books-05 {
+    display: none;
+  }
+  .mainContent .searchForTop {
+    height: auto !important;
+  }
+  .mainContent .searchForTop {
+    padding: 22px 28px 0px 28px;
+  }
+  .mainContent .searchForTop .filter .dropDown,
+  .mainContent .searchForTop .filter .searchBtn,
+  .mainContent .searchForTop .filter form {
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .mainContent .detail .detailTable .left {
+    width: 40%;
+  }
+  .mainContent .detail .detailTable .right {
+    width: 60%;
+  }
+  .mainContent .detail .detailTable .left img {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .mainContent .detail .detailTable {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .mainContent .detail .detailTable .left,
+  .mainContent .detail .detailTable .right {
+    width: 100%;
+    padding: 14px 24px;
+  }
+  /* .mainContent .detail .detailTable .right .detailContent .para {
+    border: 1px solid red;
+    width: 100%;
+    margin-right: 0px;
+    padding-right: 0px;
+  } */
+
+  .mainContent .detail .detailTable .right .action {
+    position: absolute;
+    top: 17px;
+    right: 25px;
+  }
+  .mainContent .detail .detailTable .right .detailContent .para a {
+    display: block;
+    background: #0f4152;
+    border-radius: 100px;
+    width: 144px;
+    height: 41.69px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-style: inherit;
+    color: #ffffff;
+    margin-top: 19px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .left .dropDown,
+  .header .right,
+  .header .left a {
+    display: none;
+  }
+  .header .iconMenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header .iconMenu .menuICon {
+    display: block;
+  }
+}
+@media only screen and (max-width: 669px) {
+    .action .actionDropDown .mobileDropDown{
+        display: block;
+    }
+    .action .actionDropDown .mobileDropDown p{
+        display: inline;
+    }
+ 
+  .mainContent .detail .detailTable .right .detailContent .headerDetail {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainContent .detail .detailTable .right .detailContent {
+    width: 100%;
+  }
+  .delete .inner .contentt {
+    padding: 46px 36px;
+  }
+  .delete .inner .contentt h2{
+    font-weight: 700;
+font-size: 20px;
+line-height: 29px;
+  }
+  .delete .inner .contentt .btns button{
+    height: 51px;
+  }
+  .mainContent .searchForTop .filter {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainContent .searchForTop .searchHeader {
+    justify-content: center;
+  }
+  .mainContent .searchForTop .searchHeader h1,
+  .mainContent .searchForTop .searchHeader select {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .mainContent .searchForTop .filter .dropDown {
+    width: 49% !important;
+  }
+  .mainContent .searchForTop .filter .searchBtn p {
+    display: none;
+  }
+  .mainContent .searchForTop .filter .dropDown {
+    margin-right: 0px;
+  }
+  .mainContent .searchForTop .filter .searchBtn img {
+    display: block;
+  }
+  .mainContent .searchForTop .filter form {
+    width: 80%;
+    margin-right: 0px;
+  }
+  .mainContent .searchForTop .filter .searchBtn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #0f4052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .createTxtGeneratorModal,
+  .editTxtModal {
+    
+    padding: 0% 5%;
+  }
+  .createTxtGeneratorModal .edit .inner,
+  .editTxtModal .edit .inner {
+    border: none;
+  }
+  .inner .mianContent
+  {
+    background: #ebecf1;
+  }
+
+  .createTxtGeneratorModal .edit .inner .headerFile,
+  .editTxtModal .edit .inner .headerFile {
+    border-radius: 15px;
+    margin-top: 100px;
+  }
+  .editTxtModal .edit .inner .headerFile{
+    margin-top: 250px;
+  }
+  .createTxtGeneratorModal .edit .inner .mianContent,
+  .editTxtModal .edit .inner .mianContent {
+    padding: 21px 0px;
+  }
+  
+  .createTxtGeneratorModal
+    .edit
+    .inner
+    .mianContent
+    form
+    .row
+    .floating-label-group,
+  .editTxtModal .edit .inner .mianContent form .row .floating-label-group {
+    width: 48%;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile h2,
+  .editTxtModal .edit .inner .headerFile h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile p,
+  .editTxtModal .edit .inner .headerFile p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  #fileRow {
+    flex-wrap: wrap;
+  }
+  #img {
+    width: 100%;
+  }
+  #fileRow .input textarea {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #message {
+    padding-right: 80px !important;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .top img {
+    height: 140px;
+    width: 94px;
+    margin-bottom: 0px;
+    margin: 0px;
+    margin-right: 31px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    width: 100%;
+    margin: 0px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .top span {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .top span p {
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .top span h3 {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .summary {
+    justify-content: flex-start;
+    margin-top: 26px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText #line,
+  .editTxtModal .edit .inner .mianContent #line {
+    border-top: none;
+    border: none;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .btns .left button p {
+    display: none;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .btns .left button {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .btns .left button img {
+    margin-right: 0px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .btns .confirm {
+    max-width: 195px;
+    width: 80%;
+    margin-left: 10px;
+    height: 51px;
+  }
+}
+@media only screen and (max-width: 469px) {
+  #nextBtn button {
+    width: 95% !important;
+  }
+  .editTxtModal .edit .inner .mianContent .chapterMainContent .row1 {
+    flex-wrap: wrap;
+  }
+  .editTxtModal
+    .edit
+    .inner
+    .mianContent
+    .chapterMainContent
+    .row1
+    .fileNameCenter {
+    margin-top: 11px;
+    margin-bottom: 29px;
+    margin-left: 25px;
+  }
+  .editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .file-input
+  p {
+  display: none;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .file-input
+  img {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent
+  .row1
+  .file-input {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+}
+.editTxtModal
+.edit
+.inner
+.mianContent
+.chapterMainContent .btnsChapter{
+  left: 0px;
+  right: 0px;
+}
+.editTxtModal
+  .edit
+  .inner
+  .mianContent
+  .chapterMainContent .btnsChapter .update {
+  width: 218px!important;
+  margin-right: 10px;
+}
+.editTxtModal
+.edit
+.inner
+.mianContent
+.chapterMainContent .btnsChapter .back{
+  width: 95px;
+}
+}
+@media only screen and (max-width: 469px) {
+
+  .delete .inner .contentt .deleteItem {
+    width: 200px;
+    margin-top: 6%;
+  }
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.createTxtGeneratorModal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999999 !important;
+    display: block;
+  }
+  .createTxtGeneratorModal .edit {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .createTxtGeneratorModal .edit {
+    padding: 50px 0px;
+    overflow-y: hidden;
+  }
+  .createTxtGeneratorModal .edit::-webkit-scrollbar-track {
+    background-color: transparent;
+    scrollbar-track-color: transparent;
+  }
+  .createTxtGeneratorModal .edit .inner {
+    width: 514px;
+    background: #ebecf1;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px 10px 0px 10px;
+    padding: 36px 42px;
+  }
+  .createTxtGeneratorModal .edit .inner {
+    padding: 0px !important;
+    max-width: 640px !important;
+    width: 100% !important;
+    margin-top: 150px;
+  }
+  .createTxtGeneratorModal .edit .inner {
+    margin-top: 45%;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile {
+    width: 100%;
+    background: #43c2c7;
+    height: 143px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 36px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile {
+    padding: 26px 0px !important;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+    font-family: inherit;
+    text-align: center;
+    color: #ffffff;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: inherit;
+    text-align: center;
+    color: #1b7a7d;
+  }
+  .createTxtGeneratorModal .edit .inner .headerFile .topIcon {
+    position: absolute;
+    top: -92%;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .createTxtGeneratorModal .edit .inner .mianContent h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: inherit;
+    color: #0f4152;
+    margin-bottom: 30px;
+  }
+  .createTxtGeneratorModal .edit .inner .mianContent form .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .createTxtGeneratorModal
+  .edit
+  .inner
+  .mianContent
+  form
+  .row
+  .floating-label-group {
+  position: relative;
+  display: flex;
+  width: 32%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.createTxtGeneratorModal .edit .inner .loadingGenerate {
+    width: 100%;
+    padding: 81px 0px;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText {
+    margin: 39px auto 26px auto;
+  }
+  .createTxtGeneratorModal .edit .inner .loadingGenerate img {
+    height: 212px;
+    max-width: 347px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0px;
+    margin-bottom: 69px;
+  }
+  .createTxtGeneratorModal .edit .inner .loadingGenerate h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    font-family: inherit;
+    text-align: center;
+    color: #0f4152;
+  }
+  .createTxtGeneratorModal .edit .inner .generatedText .book {
+    display: block;
+    margin: auto;
+    height: 203px;
+    width: 136px;
+    margin-bottom: 13px;
+  }
+  .createTxtGeneratorModal
+  .edit
+  .inner
+  .generatedText
+  .btns
+  .left
+  button:nth-child(1) {
+  margin-right: 12px;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .btns .left button {
+  border: 1px solid #0f4152;
+  border-radius: 100px;
+  width: 128px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  color: #0f4152;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .btns .left button img {
+  margin-right: 12px;
+}
+.createTxtGeneratorModal .edit .inner .generatedText .btns .confirm {
+  background: #0f4152;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  width: 200px;
+  height: 44px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+  outline: none;
+  /* identical to box height */
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+.editTxtModal .edit {
+  padding: 0px !important;
+  justify-content: center;
+}
+
+.editTxtModal .edit .inner {
+  padding: 0px !important;
+  margin: auto;
+}
+
+.editTxtModal .edit .inner .headerFile {
+  padding: 27px 0px 15px 0px;
+  height: 100px;
+}
+
+.editTxtModal .edit .inner .headerFile h2 {
+  margin-bottom: 2px;
+}
+
+.editTxtModal .edit .inner .headerFile .topIcon {
+  width: 98.85px;
+  height: 97.06px;
+  top: -85px !important;
+
+}
+
+.editTxtModal .edit .inner .headerFile h2 {
+  margin-bottom: 0px !important;
+  line-height: 24px;
+}
+
+.editTxtModal .edit .inner .headerFile p {
+  margin-top: 0px !important;
+}
+
+.editTxtModal .edit .inner .mianContent .chapterMainContent .row1 {
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+
+.editTxtModal .edit .inner .mianContent .chapterMainContent a {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: #0F4152;
+
+}
+.editTxtModal .edit .inner .mianContent .chapterMainContent .btnsChapter .update{
+  margin-right: 0px!important;
+
+}
+.editTxtModal .edit .inner .mianContent .chapterMainContent .btnsChapter .back{
+  margin-right: 13px!important;
+}
+.editTxtModal .edit .inner .mianContent .chapterMainContent .btnsChapter button{
+  height: 51px!important;
+}
+.editTxtModal .edit .inner .mianContent .headertxt {
+  margin-top: 38px !important;
+  margin-bottom: 38px !important;
+}
+
+.editTxtModal .edit .inner .mianContent .chapterMainContent .row1 .fileNameCenter {
+  margin-top: 11px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  height: 32px!important;
+  border-radius: 100px!important;
+}
+
+
+.floating-label-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.floating-label-group input {
+  border: 1px solid #c0c0c0;
+  background: transparent !important;
+  border-radius: 10px;
+  width: 32%;
+  padding: 0px 10px;
+  outline: none;
+  box-shadow: none;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  color: #0f4152;
+}
+
+.floating-label-group .floating-label {
+  font-size: 13px;
+  position: absolute;
+  pointer-events: none;
+  top: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #6f6f6f;
+  left: 12px;
+  transition: all 0.1s ease;
+}
+
+.floating-label-group input:focus~.floating-label,
+.floating-label-group input:not(:focus):valid~.floating-label {
+  top: -11px;
+  bottom: 0px;
+  left: 10px;
+  background: #ebecf1;
+  padding: 0px 5px;
+  width: fit-content;
+  height: 20px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
+}
+
+
+@media only screen and (max-width:669px) {
+  .editTxtModal .edit .inner .headerFile {
+      margin-top: 0px !important;
+  }
+}
+
+
+@media (max-width:481px)  { 
+  .editTxtModal .edit .inner .headerFile .cancelForm,
+.editTxtModal .edit .inner .headerFile .cancelForm,
+.createTxtGeneratorModal .edit .inner .headerFile .cancelForm {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  cursor: pointer;
+}
+.createTxtGeneratorModal .edit .inner .headerFile {
+  width: 100%;
+  background: #43c2c7;
+  height: 155px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 36px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+}
+.createTxtGeneratorModal .edit .inner{
+margin-top:-60%;
+border:0px;
+}
+.edit{
+  padding-top: 100% !important;
+  overflow: auto;
+  
+  height: 100% !important;
+  margin-top: 0%;
+}
+}
